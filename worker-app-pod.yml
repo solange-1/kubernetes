@@ -1,13 +1,15 @@
 ---
-apiVersion: v1
-kind:Pod
+apiVerion: v1
+kind: Pod
 metadata:
-  name: worker-app-pod
+  name: result-app-pod
   labels:
     author: kandi
-    name: worker-app-pod
+    name: reult-app-pod
 spec:
   containers:
-    - name: woker-app
-      image: dockersamples/examplevotingapp_worker
+    - name: result-app
+      image: dockersamples/examplevotingapp_result
+      ports:
+        containerPort: 80
 ...

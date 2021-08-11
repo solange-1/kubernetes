@@ -20,4 +20,3 @@ sepc:
       ports:
         - containerPort: 5432
 ...
-
