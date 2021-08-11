@@ -6,7 +6,7 @@ metadata:
   labels:
     author: kandi
     name: postgres-pod
-sepc:
+spec:
   containers:
     - name: postgres
       image: postgres
