@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: voting-app-service
+  labels:
+    author: kandi
+    name: voting-app-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    author: kandi
+    name: voting-app Pod
+...
